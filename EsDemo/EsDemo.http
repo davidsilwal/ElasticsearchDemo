@@ -1,0 +1,35 @@
+@EsDemo_HostAddress = http://localhost:5231
+
+GET {{EsDemo_HostAddress}}/products
+Accept: application/json
+
+###
+
+GET {{EsDemo_HostAddress}}/products/1
+Accept: application/json
+
+###
+
+POST {{EsDemo_HostAddress}}/products
+Content-Type: application/json
+
+{
+  "name": "Product 1",
+  "price": 100
+}
+###
+
+PUT {{EsDemo_HostAddress}}/products/1
+Content-Type: application/json
+
+{
+  "name": "Product 1",
+  "price": 200
+}
+
+###
+
+DELETE {{EsDemo_HostAddress}}/products/1
+Accept: application/json
+
+###
